@@ -7,7 +7,7 @@ import getCroppedImage from '../services/getCroppedImage'
 const GameCard = ({ game }: { game: Game }) => {
   return (
     <>
-      <Card>
+      <Card width={300}>
         <Image
           src={getCroppedImage(game.background_image)}
           alt={game.name}
