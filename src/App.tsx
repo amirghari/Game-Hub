@@ -20,7 +20,7 @@ function App() {
       <GridItem gridArea="nav">
         <NavBar />
       </GridItem>
-      <Show above="base">
+      <Show above="lg">
         <GridItem gridArea="aside">
           <GenresList />
         </GridItem>
