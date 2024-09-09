@@ -17,9 +17,9 @@ interface props {
 
 const GenresList = ({ setSelectedGenre, selectedGenre }: props) => {
   const { data, isLoading, errors } = useGenres()
+  if (errors) return null
   return (
     <>
-      {errors && null}
       <List>
         {isLoading && <Spinner marginX={7} />}
         {data?.map((genre: Genre) => (
