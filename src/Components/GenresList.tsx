@@ -12,9 +12,10 @@ import getCroppedImage from '../services/getCroppedImage'
 
 interface props {
   setSelectedGenre: (genre: Genre) => void
+  selectedGenre: Genre | null
 }
 
-const GenresList = ({ setSelectedGenre }: props) => {
+const GenresList = ({ setSelectedGenre, selectedGenre }: props) => {
   const { data, isLoading, errors } = useGenres()
   return (
     <>
@@ -33,6 +34,7 @@ const GenresList = ({ setSelectedGenre }: props) => {
                 fontSize={'large'}
                 variant={'link'}
                 onClick={() => setSelectedGenre(genre)}
+                fontWeight={genre.id === selectedGenre?.id ? 'bold' : 'normal'}
               >
                 {genre.name}
               </Button>
