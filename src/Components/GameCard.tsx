@@ -7,7 +7,7 @@ import getCroppedImage from '../services/getCroppedImage'
 const GameCard = ({ game }: { game: Game }) => {
   return (
     <>
-      <Card width={300}>
+      <Card>
         <Image
           src={getCroppedImage(game.background_image)}
           alt={game.name}
@@ -16,7 +16,7 @@ const GameCard = ({ game }: { game: Game }) => {
         />
         <CardBody>
           <Heading fontSize="2xl">{game.name}</Heading>
-          <HStack justifyContent="space-between">
+          <HStack justifyContent="space-between" paddingTop={2}>
             <IconsComponent
               platform={game.parent_platforms.map((p) => p.platform)}
             />

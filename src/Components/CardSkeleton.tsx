@@ -4,12 +4,7 @@ const CardSkeleton = () => {
   return (
     <>
       <Card>
-        <Skeleton
-          height="200px"
-          width={300}
-          borderRadius={10}
-          overflow="hidden"
-        />
+        <Skeleton height="200px" borderRadius={10} overflow="hidden" />
         <CardBody>
           <SkeletonText />
         </CardBody>
