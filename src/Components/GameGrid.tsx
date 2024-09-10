@@ -8,10 +8,15 @@ import { Platform } from '../Hooks/usePlatforms.ts'
 interface props {
   selectedGenre: Genre | null
   selectedPlatform: Platform | null
+  sortOrder: string
 }
 
-const GameGrid = ({ selectedGenre, selectedPlatform }: props) => {
-  const { data, errors, isLoading } = useGame(selectedGenre, selectedPlatform)
+const GameGrid = ({ selectedGenre, selectedPlatform, sortOrder }: props) => {
+  const { data, errors, isLoading } = useGame(
+    selectedGenre,
+    selectedPlatform,
+    sortOrder,
+  )
   const skeleton = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
   return (
