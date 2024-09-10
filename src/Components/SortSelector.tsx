@@ -41,8 +41,9 @@ const SortSelector = ({ selectSortOrder, sortOrder }: Props) => {
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
         {sortOrder !== ''
-          ? sortSelector.find((item) => item.value === sortOrder)?.name
-          : 'Ordering: SortOrder'}
+          ? 'Ordered By: ' +
+            sortSelector.find((item) => item.value === sortOrder)?.name
+          : 'Ordering By: Relevance'}
       </MenuButton>
       <MenuList>
         {sortSelector.map((item) => (
