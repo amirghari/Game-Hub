@@ -9,13 +9,20 @@ interface props {
   selectedGenre: Genre | null
   selectedPlatform: Platform | null
   sortOrder: string
+  search: string
 }
 
-const GameGrid = ({ selectedGenre, selectedPlatform, sortOrder }: props) => {
+const GameGrid = ({
+  selectedGenre,
+  selectedPlatform,
+  sortOrder,
+  search,
+}: props) => {
   const { data, errors, isLoading } = useGame(
     selectedGenre,
     selectedPlatform,
     sortOrder,
+    search,
   )
   const skeleton = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
