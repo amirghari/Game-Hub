@@ -29,6 +29,7 @@ const GenresList = ({ setSelectedGenre, selectedGenre }: props) => {
                 src={getCroppedImage(genre.image_background)}
                 boxSize={'30px'}
                 borderRadius={'8px'}
+                objectFit="cover"
               />
               <Button
                 fontSize={'large'}
