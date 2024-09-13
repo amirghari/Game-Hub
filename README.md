@@ -1,6 +1,4 @@
-## Game Hub: A React & TypeScript Webpage for Game Discovery
-
-**This README is formatted in Markdown.**
+## Game Hub: A Customizable Game Discovery Platform
 
 This project, developed by Amir Ghari, is a single-page application (SPA) called Game Hub, built with React and TypeScript. It utilizes the Rawg API to provide users with a comprehensive list of games, sorted from newest to oldest.
 
@@ -8,6 +6,7 @@ This project, developed by Amir Ghari, is a single-page application (SPA) called
 
 * **Extensive Game Database:** Game Hub fetches a vast repository of games, keeping you updated with the latest releases.
 * **Newest to Oldest Order:** Games are displayed in a chronological order, ensuring you discover the freshest titles first.
+* **Search and Sorting:** You can now search for games by name, filter by genre, sort by year published, Metacritic score, popularity, and more.
 
 **Technologies:**
 
@@ -58,17 +57,9 @@ We welcome contributions to this project! Feel free to fork the repository and s
 
 **License:**
 
-This project is licensed under the [**insert license here**](link to license file/website).
+This project is licensed under the [https://amirghari.com](https://amirghari.com).
 
 **Contact:**
 
-For any questions or feedback, feel free to reach out to Amir Ghari at [**insert contact information**].
+For any questions or feedback, feel free to reach out to Amir Ghari at [https://amirghari.com](https://amirghari.com).
 
-**Additional Notes:**
-
-* You may need to replace `your-username` in the cloning instruction with your actual GitHub username.
-* This is a basic README template. You can expand on it by adding sections like:
-    * Screenshots of the application
-    * Deployment instructions
-    * Testing guidelines
-    * Contributing guidelines (more detailed)
