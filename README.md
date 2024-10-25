@@ -55,9 +55,10 @@ This will start a development server and open the application in your default br
 
 We welcome contributions to this project! Feel free to fork the repository and submit pull requests with your improvements.
 
-**License:**
+**License**
 
-This project is licensed under the [https://amirghari.com](https://amirghari.com).
+This project is licensed under the [MIT License](LICENSE).
+
 
 **Contact:**
 
